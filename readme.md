@@ -4,7 +4,7 @@
 <br/>
 
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
+  <a href="https://github.com/Romdree30/Romdree30-CI4-GarlicShrimp.git">
     <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
   </a>
 <!-- * Title Section -->
