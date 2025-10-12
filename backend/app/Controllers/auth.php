@@ -10,4 +10,8 @@ class Auth extends BaseController
     {
         return view('auth/login');
     }
+    public function signup(): string
+    {
+        return view('auth/signup');
+    }
 }
