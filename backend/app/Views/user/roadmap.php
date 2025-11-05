@@ -67,6 +67,14 @@
             </div>
 
         </div>
+
+        <!-- Back to Home Button -->
+        <div class="mt-12 text-center">
+            <a href="/"
+                class="inline-block bg-orange-600 hover:bg-orange-700 shadow-md hover:shadow-lg px-6 py-3 rounded-lg focus:ring-4 focus:ring-orange-500/50 font-semibold text-white transition-all duration-300">
+                Back to Home
+            </a>
+        </div>
     </main>
 
     <!-- Footer -->
