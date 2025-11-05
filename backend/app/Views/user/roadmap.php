@@ -2,100 +2,68 @@
 <html lang="en" class="bg-orange-50 dark:bg-gray-900">
 
 <head>
-    <?= view('components/head') ?>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Road Map</title>
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                },
-            },
-        };
-    </script>
-
-    <!-- Google Fonts - Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
+    <?= view('components/head.php') ?>
+    <title>Project Road Map</title>
 </head>
 
 <body class="flex flex-col min-h-screen text-gray-900 dark:text-gray-100">
 
     <!-- Header -->
     <header>
-        <?= view('components/header') ?>
+        <?= view('components/header.php') ?>
     </header>
 
-    <!-- Main Content -->
-    <main class="flex flex-grow justify-center items-center px-4 py-12">
-        <div
-            class="bg-white dark:bg-gray-800 shadow-xl p-8 md:p-12 rounded-2xl w-full max-w-4xl transition-all duration-300 transform">
+    <!-- Main Section -->
+    <main class="flex-grow mx-auto px-4 py-12 container">
+        <h1 class="mb-12 font-extrabold text-orange-600 dark:text-orange-400 text-4xl md:text-5xl text-center">
+            Our Development Road Map
+        </h1>
 
-            <h1 class="mb-6 font-bold text-orange-600 text-3xl md:text-4xl text-center">Our Road Map</h1>
-            <p class="mb-8 text-gray-700 dark:text-gray-400 text-center">
-                See what we're cooking up next!
-            </p>
+        <div class="space-y-6 mx-auto max-w-3xl">
 
-            <div class="space-y-12">
-                <!-- Phase 1 -->
-                <div class="bg-orange-50 dark:bg-gray-700 shadow-md p-6 rounded-lg">
-                    <h2 class="mb-2 font-semibold text-gray-800 dark:text-gray-200 text-2xl">
-                        Phase 1: Launch & Get Feedback
-                    </h2>
-                    <ul class="space-y-2 text-gray-700 dark:text-gray-300 list-disc list-inside">
-                        <li>Launch the core website with login and sign-up functionality.</li>
-                        <li>Gather initial feedback from our first customers.</li>
-                        <li>Build out our "About Us" page to share our story.</li>
-                    </ul>
+            <!-- Feature 1: User Authentication System -->
+            <div class="bg-white dark:bg-gray-800 shadow-xl hover:shadow-2xl p-6 border-orange-500 border-l-8 rounded-2xl transition-shadow duration-300">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="font-bold text-orange-700 dark:text-orange-300 text-2xl">User Authentication System</h2>
                 </div>
-
-                <!-- Phase 2 -->
-                <div class="bg-orange-50 dark:bg-gray-700 shadow-md p-6 rounded-lg">
-                    <h2 class="mb-2 font-semibold text-gray-800 dark:text-gray-200 text-2xl">
-                        Phase 2: Expand & Enhance
-                    </h2>
-                    <ul class="space-y-2 text-gray-700 dark:text-gray-300 list-disc list-inside">
-                        <li>Integrate an online menu with high-quality images.</li>
-                        <li>Add an online ordering system for local delivery and pickup.</li>
-                        <li>Introduce a loyalty program for returning customers.</li>
-                    </ul>
-                </div>
-
-                <!-- Phase 3 -->
-                <div class="bg-orange-50 dark:bg-gray-700 shadow-md p-6 rounded-lg">
-                    <h2 class="mb-2 font-semibold text-gray-800 dark:text-gray-200 text-2xl">
-                        Phase 3: The Future
-                    </h2>
-                    <ul class="space-y-2 text-gray-700 dark:text-gray-300 list-disc list-inside">
-                        <li>Develop a mobile app for seamless ordering on the go.</li>
-                        <li>Open new physical store locations.</li>
-                        <li>Add new shrimp recipes to the menu based on customer requests.</li>
-                    </ul>
-                </div>
+                <p class="mb-4 text-gray-600 dark:text-gray-400 text-sm">
+                    Implementing the core foundation for user accounts and secure access.
+                </p>
+                <ul class="space-y-2 text-gray-800 dark:text-gray-200 list-disc list-inside">
+                    <li>Launch core website with **Login** and **Sign-up** functionality.</li>
+                    <li>Secure user data handling and password management.</li>
+                    <li>Integrate initial customer feedback loops.</li>
+                </ul>
             </div>
 
-            <!-- Back to Home -->
-            <div class="mt-8 text-center">
-                <a href="/"
-                    class="inline-block bg-orange-600 hover:bg-orange-700 px-6 py-3 rounded-lg focus:ring-4 focus:ring-orange-500/50 font-semibold text-white transition-all duration-300">
-                    Back to Home
-                </a>
+            <!-- Feature 2: Shrimp Menu & Descriptions -->
+            <div class="bg-white dark:bg-gray-800 shadow-xl hover:shadow-2xl p-6 border-amber-500 border-l-8 rounded-2xl transition-shadow duration-300">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="font-bold text-amber-700 dark:text-amber-300 text-2xl">Shrimp Menu & Catalog</h2>
+                </div>
+                <p class="mb-4 text-gray-600 dark:text-gray-400 text-sm">
+                    Building the dynamic menu interface for customers to browse dishes.
+                </p>
+                <ul class="space-y-2 text-gray-800 dark:text-gray-200 list-disc list-inside">
+                    <li>Integrate a dynamic menu with high-quality descriptions and images.</li>
+                    <li>Develop menu filtering and search capabilities.</li>
+                    <li>Establish a content management system for easy menu updates.</li>
+                </ul>
+            </div>
+
+            <!-- Feature 3: Online Ordering System -->
+            <div class="bg-white dark:bg-gray-800 shadow-xl hover:shadow-2xl p-6 border-amber-500 border-l-8 rounded-2xl transition-shadow duration-300">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="font-bold text-amber-700 dark:text-amber-300 text-2xl">Online Ordering System</h2>
+                </div>
+                <p class="mb-4 text-gray-600 dark:text-gray-400 text-sm">
+                    Enabling customers to easily place, pay for, and track their food orders.
+                </p>
+                <ul class="space-y-2 text-gray-800 dark:text-gray-200 list-disc list-inside">
+                    <li>Add local delivery and pickup options.</li>
+                    <li>Integrate secure payment processing.</li>
+                    <li>Implement order tracking and history features.</li>
+                </ul>
             </div>
 
         </div>
@@ -103,9 +71,8 @@
 
     <!-- Footer -->
     <footer class="mt-auto">
-        <?= view('components/footer') ?>
+        <?= view('components/footer.php') ?>
     </footer>
-
 </body>
 
 </html>
