@@ -4,16 +4,16 @@
         <div class="items-center gap-8 grid grid-cols-1 md:grid-cols-3">
             <!-- Logo/Branding -->
             <div class="md:text-left text-center">
-                <a href="index.html" class="font-bold text-white hover:text-orange-100 text-3xl transition-colors">
+                <a href="/" class="font-bold text-white hover:text-orange-100 text-3xl transition-colors">
                     Garlic Shrimp Co.
                 </a>
             </div>
 
             <!-- Footer Navigation Links -->
             <div class="flex md:flex-row flex-col justify-center md:space-x-8 space-y-2 md:space-y-0">
-                <a href="about.html" class="text-white/90 hover:text-white transition-colors">About</a>
-                <a href="moodboard.html" class="text-white/90 hover:text-white transition-colors">Mood Board</a>
-                <a href="roadmap.html" class="text-white/90 hover:text-white transition-colors">Road Map</a>
+                <!-- Using clean routes based on your controller setup -->
+                <a href="/moodboard" class="text-white/90 hover:text-white transition-colors">Mood Board</a>
+                <a href="/roadmap" class="text-white/90 hover:text-white transition-colors">Road Map</a>
             </div>
 
             <!-- Social Media/Contact -->
@@ -35,6 +35,3 @@
         </div>
     </div>
 </footer>
-</body>
-
-</html>
