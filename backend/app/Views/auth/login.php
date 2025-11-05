@@ -87,7 +87,7 @@
                 <!-- Sign-up Section -->
                 <div class="flex justify-center items-center mt-4">
                     <span class="text-sm">Don't have an account?</span>
-                    <a href="signup.html" class="ml-2 font-medium text-orange-600 hover:underline">Sign up</a>
+                    <a href="/signup" class="ml-2 font-medium text-orange-600 hover:underline">Sign up</a>
                 </div>
             </div>
 
