@@ -87,7 +87,7 @@
                 <!-- Log In -->
                 <div class="flex justify-center items-center mt-4">
                     <span class="text-sm">Already have an account?</span>
-                    <a href="login.php" class="ml-2 font-medium text-orange-600 hover:underline">Log in</a>
+                    <a href="/login" class="ml-2 font-medium text-orange-600 hover:underline">Log in</a>
                 </div>
             </div>
         </div>
