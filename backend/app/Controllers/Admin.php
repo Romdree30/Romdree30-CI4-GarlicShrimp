@@ -20,4 +20,9 @@ class Admin extends BaseController
     {
         return view('admin/accounts');
     }
+
+    public function requests(): string
+    {
+        return view('admin/requests');
+    }
 }
