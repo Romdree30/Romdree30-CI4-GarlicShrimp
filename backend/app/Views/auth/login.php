@@ -59,7 +59,7 @@
                     class="hidden mb-4 p-3 rounded-lg font-medium text-sm text-center transition-all duration-300"></div>
 
                 <!-- Login Form -->
-                <form id="login-form" class="space-y-4">
+                <form method="post" action="<?= site_url('login') ?>" id="login-form" class="space-y-4">
                     <div>
                         <label for="login-email" class="block mb-1 font-medium text-sm">Email</label>
                         <input type="email" id="login-email" required
