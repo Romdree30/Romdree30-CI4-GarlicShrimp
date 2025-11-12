@@ -119,7 +119,7 @@
         <nav class="flex-grow mt-4">
             <ul>
                 <li>
-                    <a href="/admin/dashboard" class="active">
+                    <a href="/dashboard" class="active">
                         <svg class="mr-3 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
                         </svg>
@@ -127,7 +127,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/admin/shrimp-menu">
+                    <a href="/shrimpMenu">
                         <svg class="mr-3 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
                         </svg>
@@ -135,7 +135,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/admin/accounts">
+                    <a href="/accounts">
                         <svg class="mr-3 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M12 20.005h.01m-10.875-.005C2.187 17.135 4.6 15 7.5 15h9c2.9 0 5.313 2.135 5.488 5.005M12 12a4 4 0 100-8 4 4 0 000 8z"></path>
                         </svg>
@@ -143,7 +143,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/admin/requests">
+                    <a href="/requests">
                         <svg class="mr-3 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-2 2v7a2 2 0 01-2 2H7a2 2 0 01-2-2v-7m14 0V6a2 2 0 00-2-2H7a2 2 0 00-2 2v4l7 5 7-5z"></path>
                         </svg>
@@ -186,7 +186,7 @@
             <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
                 <!-- Card for Shrimp Menu -->
-                <a href="/admin/shrimp-menu" class="flex flex-col items-center p-8 rounded-xl text-center cursor-pointer card">
+                <a href="/shrimpMenu" class="flex flex-col items-center p-8 rounded-xl text-center cursor-pointer card">
                     <svg class="mb-4 w-12 h-12 card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
                     </svg>
@@ -194,7 +194,7 @@
                     <p class="text-gray-500 text-sm">Manage all shrimp dishes and menu items.</p>
                 </a>
 
-                <a href="/admin/accounts" class="flex flex-col items-center p-8 rounded-xl text-center cursor-pointer card">
+                <a href="/accounts" class="flex flex-col items-center p-8 rounded-xl text-center cursor-pointer card">
                     <svg class="mb-4 w-12 h-12 card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M12 20.005h.01m-10.875-.005C2.187 17.135 4.6 15 7.5 15h9c2.9 0 5.313 2.135 5.488 5.005M12 12a4 4 0 100-8 4 4 0 000 8z"></path>
                     </svg>
@@ -202,7 +202,7 @@
                     <p class="text-gray-500 text-sm">View and manage user accounts and profiles.</p>
                 </a>
 
-                <a href="/admin/requests" class="flex flex-col items-center p-8 rounded-xl text-center cursor-pointer card">
+                <a href="/requests" class="flex flex-col items-center p-8 rounded-xl text-center cursor-pointer card">
                     <svg class="mb-4 w-12 h-12 card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-2 2v7a2 2 0 01-2 2H7a2 2 0 01-2-2v-7m14 0V6a2 2 0 00-2-2H7a2 2 0 00-2 2v4l7 5 7-5z"></path>
                     </svg>
@@ -214,7 +214,7 @@
     </div>
 
     <script type="module">
-        console.log("Admin Dashboard loaded with 'Services' renamed to 'Shrimp Menu' and banner text updated.");
+        console.log("Admin Dashboard loaded with correct routing links.");
     </script>
 </body>
 
