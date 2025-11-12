@@ -10,4 +10,9 @@ class Admin extends BaseController
     {
         return view('admin/dashboard');
     }
+
+    public function shrimpMenu(): string
+    {
+        return view('admin/shrimpMenu');
+    }
 }
