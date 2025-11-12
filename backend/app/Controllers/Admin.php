@@ -15,4 +15,9 @@ class Admin extends BaseController
     {
         return view('admin/shrimpMenu');
     }
+
+    public function accounts(): string
+    {
+        return view('admin/accounts');
+    }
 }
