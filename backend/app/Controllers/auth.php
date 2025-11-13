@@ -11,7 +11,7 @@ class Auth extends BaseController
         return view('auth/signup');
     }
 
-    public function log_in()
+    public function login()
     {
         $request = service('request');
 
@@ -65,10 +65,7 @@ class Auth extends BaseController
         if ($type === 'admin') {
             return redirect()->to('/dashboard');
         }
-
-        if ($type === 'client') {
-            return redirect()->to('/');
-        }
+        return redirect()->to('/moodboard');
     }
 
     public function logout()

@@ -19,7 +19,7 @@
             <!-- Text Content -->
             <div class="space-y-6 text-left">
                 <span class="font-semibold text-orange-500 text-sm uppercase tracking-widest">
-                    About Garlic Shrimp Co.
+                    About Garlic Shrimp Co.asdasdasd
                 </span>
                 <h2 class="font-extrabold text-gray-900 dark:text-white text-4xl sm:text-5xl">
                     Our Story: Why Every Shrimp is Delicious
