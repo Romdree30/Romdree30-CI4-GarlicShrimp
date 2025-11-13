@@ -15,5 +15,5 @@ $routes->get('/shrimpMenu', 'Admin::shrimpMenu');
 $routes->get('/accounts', 'Admin::accounts');
 $routes->get('/requests', 'Admin::requests');
 $routes->post('login', 'auth::login');
-$routes->post('logout', 'auth::logout');
+$routes->get('logout', 'auth::logout');
 $routes->post('signup', 'auth::sign_up');

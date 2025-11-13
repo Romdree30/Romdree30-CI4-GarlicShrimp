@@ -65,7 +65,7 @@ class Auth extends BaseController
         if ($type === 'admin') {
             return redirect()->to('/dashboard');
         }
-        return redirect()->to('/moodboard');
+        return redirect()->to('/');
     }
 
     public function logout()
