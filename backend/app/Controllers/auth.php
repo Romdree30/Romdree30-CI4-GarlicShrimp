@@ -6,12 +6,7 @@ use App\Controllers\BaseController;
 
 class Auth extends BaseController
 {
-    public function signup(): string
-    {
-        return view('auth/signup');
-    }
-
-    public function log_in()
+    public function login()
     {
         $request = service('request');
 
@@ -65,10 +60,7 @@ class Auth extends BaseController
         if ($type === 'admin') {
             return redirect()->to('/dashboard');
         }
-
-        if ($type === 'client') {
-            return redirect()->to('/');
-        }
+        return redirect()->to('/');
     }
 
     public function logout()
@@ -83,7 +75,7 @@ class Auth extends BaseController
         $request = service('request');
     }
 
-    public function sign_up()
+    public function signup()
     {
         $request = service('request');
 
@@ -98,9 +90,10 @@ class Auth extends BaseController
             'last_name' => $post['last_name'],
             'gender' => $post['gender'],
             'email' => $post['email'],
-            'password_hash' => password_hash($post['password'], PASSWORD_DEFAULT),
+            'password_hash' => $post['password'],
         ];
 
         $inserted = $userModel->insert($data);
+        return redirect()->to('/login');
     }
 }
