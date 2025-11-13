@@ -59,15 +59,15 @@
                     class="hidden mb-4 p-3 rounded-lg font-medium text-sm text-center transition-all duration-300"></div>
 
                 <!-- Login Form -->
-                <form id="login-form" class="space-y-4">
+                <form method="post" action="<?= site_url('login') ?>" id=" login-form" class="space-y-4">
                     <div>
-                        <label for="login-email" class="block mb-1 font-medium text-sm">Email</label>
-                        <input type="email" id="login-email" required
+                        <label for="email" class="block mb-1 font-medium text-sm">Email</label>
+                        <input type="email" id="email" name="email" required
                             class="bg-gray-50 dark:bg-gray-700 p-3 border focus:border-orange-500 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-orange-500 w-full transition-all duration-300">
                     </div>
                     <div>
-                        <label for="login-password" class="block mb-1 font-medium text-sm">Password</label>
-                        <input type="password" id="login-password" required
+                        <label for="password" class="block mb-1 font-medium text-sm">Password</label>
+                        <input type="password" id="password" name="password" required
                             class="bg-gray-50 dark:bg-gray-700 p-3 border focus:border-orange-500 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-orange-500 w-full transition-all duration-300">
                     </div>
                     <button type="submit"
