@@ -4,22 +4,22 @@
 <br/>
 
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
+  <a href="https://github.com/Romdree30/Romdree30-CI4-GarlicShrimp.git">
     <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
   </a>
 <!-- * Title Section -->
-  <h3 align="center">AD - CI4 Template</h3>
+  <h3 align="center">Garlic Shrimp Co.</h3>
 </div>
 
 <!-- * Description Section -->
 <div align="center">
-This repository is a beginner-friendly CodeIgniter 4 template.  
-It helps teams quickly bootstrap backend + frontend projects, with simple sample modules that show how to extend the system.
+Garlic Shrimp Co. is a modern, responsive website built with CodeIgniter 4 and Tailwind CSS. It showcases our delicious garlic shrimp dishes, allows users to create accounts via Firebase authentication, and explores features like mood boards, roadmaps, and dynamic content cards. This project demonstrates a clean integration of backend and frontend for fast prototyping and learning.
+</div>
 </div>
 
 <br/>
 
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/ci4-template)
+![](https://visit-counter.vercel.app/counter.png?page=https://github.com/Romdree30/Romdree30-CI4-GarlicShrimp.git)
 
 <!-- ! Make sure it was similar to your github -->
 
@@ -55,22 +55,25 @@ It helps teams quickly bootstrap backend + frontend projects, with simple sample
 
 ## Overview
 
-This template provides a **minimal CodeIgniter 4 project layout** with conventions for file organization, commit practices, and simple modules.
+This project is a **modern web application for Garlic Shrimp Co.**, built using CodeIgniter 4 for the backend and Tailwind CSS for the frontend. 
+It features user authentication via Firebase, interactive UI components like cards and buttons, and dynamic content sections such as mood boards and roadmaps.
 
-It is designed to be **easy to start with** and a **reference for adding new features**.
+* **Purpose**: Showcase Garlic Shrimp Co.'s menu and features while providing a clean, responsive interface for users.
+* **Audience**: Restaurant website visitors, developers learning CI4, and teams exploring frontend-backend integration.
 
-* **Purpose**: a clean starting point for CI4 apps.
-* **Audience**: developers who want a predictable structure and quick onboarding.
 
 ### Key Components
 
-These are **sample modules** included (or suggested) for learning how to add features:
-
-| Component                 | Purpose                                                             | Notes                                                   |
-| ------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------- |
-| **Auth (Sample)**         | Basic login/logout and role check (admin/user).                     | Uses CI4 sessions + MySQL `users` table.                |
-| **CRUD Module**           | Example entity (`Posts` or `Tasks`) with create/read/update/delete. | Demonstrates Controller → Service → Repository pattern. |
-| **Scheduler (Sample)**    | Simple to-do list with due dates.                                   | Shows how to extend with new tables and services.       |
+| Component                | Purpose                                                         | Notes                                                       |
+| ------------------------ | --------------------------------------------------------------- | ----------------------------------------------------------- |
+| **Authentication**       | User sign up, login, and session handling.                     | Uses Firebase Authentication; supports custom tokens and anonymous login. |
+| **Cards (Type 1–4)**     | Display menu items, inspirations, and highlights dynamically.  | Each card type has unique layout and hover effects; reusable component via PHP partials. |
+| **Buttons (Type 1–4)**   | Reusable buttons for actions like ordering or navigation.       | Styled with Tailwind; supports gradients, hover, and disabled states. |
+| **Pages / Views**        | Landing, Moodboard, Roadmap, Sign Up, and Login pages.          | Managed via CI4 Controllers (`Users` & `Auth`) and route definitions. |
+| **Firebase Firestore**   | Stores user profile and app-specific data.                     | On login, real-time snapshot updates user info dynamically. |
+| **Header & Footer**      | Site-wide navigation and branding.                              | Dark mode enabled; responsive layout for desktop and mobile. |
+| **Hero Section**         | Landing page banner with shrimp image and call-to-action.      | Uses absolute positioning, overlay, and Tailwind utilities for text styling. |
+| **Responsive & Dark Mode** | Full mobile-friendly support and theme toggle.               | Tailwind CSS classes handle responsive sizing, spacing, and colors. |
 
  <!-- ! Start simple. Use these modules as **learning samples**; extend or replace them based on your project’s needs. -->
 
@@ -78,22 +81,20 @@ These are **sample modules** included (or suggested) for learning how to add fea
 
 #### Language
 
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge\&logo=php\&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
-#### Framework/Library
+#### Framework / Library
 
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge\&logo=tailwindcss\&logoColor=white)
-![CodeIgniter](https://img.shields.io/badge/CodeIgniter-EF4223?style=for-the-badge\&logo=codeigniter\&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![CodeIgniter](https://img.shields.io/badge/CodeIgniter-EF4223?style=for-the-badge&logo=codeigniter&logoColor=white)
 
-#### Databases
+#### Database / Backend Services
 
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge\&logo=mysql\&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge\&logo=postgresql\&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge\&logo=mongodb\&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge\&logo=firebase\&logoColor=black)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+
 
 <!-- ! Keep only the used technology -->
 
